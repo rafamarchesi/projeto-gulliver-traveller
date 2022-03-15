@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Projeto Traveller</title>
+    <meta name="description" content=""/>
+    <meta name="robots" content="noindex,nofollow"/>
+    <meta name="author" content="Rafaela Marchesi Barrionuevo">
+    <link href="imgs/favicon.png" sizes="128x128" rel="shortcut icon" type="image/x-icon">
+
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:url" content="">
+    <meta property="og:title" content="Projeto Traveller">
+    <meta property="og:site_name" content="ProjetoTraveller">
+    <meta property="og:description" content="Projeto Traveller">
+    <meta property="og:image" content="/imgs/banner-home.jpg">
+
+    <script src="https://kit.fontawesome.com/6d928dc73b.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link type="text/css" rel="stylesheet" href="./css/fonte/Nunito/stylesheet.css">
+    <link type="text/css" rel="stylesheet" href="./css/style.css"/>        
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">    
+</head>
+<body>
+   <section id="contato">
+        <div class="container">
+            <div class="box-contato aos-init aos-animate" data-aos="fade-down" data-aos-duration="2000">
+                <div class="titulo">
+                    <h1>Compartilhe uma nova experiência</h1>               
+                </div>
+                <div class="conteudo">
+                    <form id="formContato" action="" method="post">
+                        <div class="campos">
+                            <div class="box">
+                                <input type="text" name="nome" placeholder="NOME DO LOCAL*" />
+                            </div>
+                            <div class="box duplo">
+                                <input type="text" name="email" placeholder="ONDE*" />
+                            </div>
+                            <div class="box duplo">
+                                <input type="date" name="date" />
+                            </div>
+                           
+                            <div class="box cidade">
+                                <select name="select" selected>
+                                  <option value="valor1" >CIDADE*</option>
+                                  <option value="São Paulo">São Paulo</option>
+                                  <option value="Rio de Janeiro">Rio de Janeiro</option>
+                                  <option value="Nova Iorc">Nova Iorc</option>
+                                  <option value="Barcelona">Barcelona</option>
+                                  <option value="Paris">Paris</option>
+                                </select>
+                            </div>
+                            <div class="box uf">
+                                <select name="select">
+                                  <option value="valor1" selected>UF*</option>
+                                  <option value="SP" >SP</option>
+                                  <option value="RJ">RJ</option>
+                                  <option value="OUTRO">OUTRO</option>
+                                </select>
+                            </div>
+                            <div class="box pais">
+                                <select name="select" selected>
+                                  <option value="valor1" >PAÍS*</option>
+                                  <option value="Brasil">Brasil</option>
+                                  <option value="Eua">Eua</option>
+                                  <option value="Espanha">Espanha</option>
+                                  <option value="França">França</option>
+                                </select>
+                            </div>
+                            <div class="frase">
+                                <h2>O que esse lugar oferece:</h2>                                
+                            </div>
+                            <div class="checkbox">
+                                <div class="cada-check">                                 
+                                    <input type="checkbox" value="alimentacao">
+                                    <label for="alimentacao">Alimentação</label>
+                                </div>
+                                <div class="cada-check">                                    
+                                    <input type="checkbox" value="petFriendly">
+                                    <label for="petFriendly">Pet Friendly</label>
+                                </div>
+                                <div class="cada-check">                                    
+                                    <input type="checkbox" value="musica">
+                                    <label for="musica">Música ao vivo/ shows</label>
+                                </div>
+                                <div class="cada-check">                                    
+                                    <input type="checkbox" value="drinks">
+                                    <label for="drinks">Drinks</label>
+                                </div>
+                                <div class="cada-check">                                    
+                                    <input type="checkbox" value="souvenirs">
+                                    <label for="souvenirs">Souvenirs</label>
+                                </div>
+                                <div class="cada-check">                                    
+                                    <input type="checkbox" value="noturno">
+                                    <label for="noturno">Vida Noturna</label>
+                                </div>
+                                                                            
+                            </div>
+                            <div class="frase">
+                                <h2>Escolha uma categoria</h2>                                
+                            </div>
+
+                            <div class="checkbox">
+                                <div class="cada-check">                                 
+                                    <input type="radio" id="Gastronomia" name="categoria" value="Gastronomia" checked>
+                                    <label for="Gastronomia">Gastronomia</label>
+                                </div>
+                                <div class="cada-check">                                 
+                                    <input type="radio" id="Museus" name="categoria" value="Museus">
+                                    <label for="Museus">Museus</label>
+                                </div>
+                                <div class="cada-check">                                 
+                                    <input type="radio" id="Hospedagem" name="categoria" value="Hospedagem">
+                                    <label for="Hospedagem">Hospedagem</label>
+                                </div>
+                                <div class="cada-check">                                 
+                                    <input type="radio" id="Diversão" name="categoria" value="Diversão">
+                                    <label for="Diversão">Diversão</label>
+                                </div>
+                                <div class="cada-check">                                 
+                                    <input type="radio" id="Turísticos" name="categoria" value="Turísticos">
+                                    <label for="Turísticos">Pontos Turísticos</label>
+                                </div>                                                                                  
+                            </div>
+                        </div>
+                        <div class="campos">
+                            <textarea name="mensagem" placeholder="DESCRIÇÃO DO LOCAL..."></textarea>
+                        </div>
+                        <div class="campos">
+                            <div class="frase">
+                                <h2>Selecione uma imagem:</h2>                                
+                            </div>
+                        </div>
+                        <div class="seleciona-imagem">
+                            <input type="file" src="Botao Azul Normal- OK.png" class="botao">
+                        </div>                        
+                        <div class="enviar">
+                            <button name="enviar">ENVIAR!</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>  
+    </section>
+
+</body>
+<footer>
+    <div class="container">
+        <div class="box-footer">
+            <p>COPYRIGHT © 2022 - Rafaela Marchesi. Todos os direitos reservados.</p>            
+        </div>
+    </div>
+</footer>
+</body>
+</html>
